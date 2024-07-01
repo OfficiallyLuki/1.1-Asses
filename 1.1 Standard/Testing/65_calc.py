@@ -1,7 +1,0 @@
-from easygui import *
-
-fahrenheit = integerbox ("Enter the degress in Fahrenheit to be converted to Celsius", upperbound= 2100)
-
-celsius = (fahrenheit - 32) / 1.8
-
-msgbox (celsius)
