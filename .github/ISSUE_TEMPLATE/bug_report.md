@@ -1,8 +1,8 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: Create a report to log the issue
 title: 'Bug Report - 00/00/2024 - Version: '
-labels: bug
+labels: Bug, Help Needed
 assignees: OfficiallyLuki
 
 ---
