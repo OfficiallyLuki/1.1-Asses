@@ -21,13 +21,13 @@ while a != "a":
         if a == "a":
             total = (total)
 
-b = buttonbox(str(name) + " , you want to join an online gaming site. which of the following information is okay to post online? \n\n A. A nickname\n B. Your name\n C. Your email address", choices='a' 'b' 'c')
+b = buttonbox(str(name) + " , Someone sends you a text that is hurtful and makes you feel bad about yourself. What should you do? \n\n A. Delete the message and try forget about it\n B. Keep the text and show an adult you trust\n C. Text the person back saying something mean to them", choices='a' 'b' 'c')
 if b == "b":
         total = (total+1)
         msgbox("you got your question right the first time")
 while b != "b":
         msgbox("you got your question wrong!")
-        b = buttonbox(str(name) + " , you want to join an online gaming site. which of the following information is okay to post online? \n\n A. A nickname\n B. Your name\n C. Your email address", choices='a' 'b' 'c')
+        b = buttonbox(str(name) + " , Someone sends you a text that is hurtful and makes you feel bad about yourself. What should you do? \n\n A. Delete the message and try forget about it\n B. Keep the text and show an adult you trust\n C. Text the person back saying something mean to them", choices='a' 'b' 'c')
         if b == "b":
             total = (total)
 
