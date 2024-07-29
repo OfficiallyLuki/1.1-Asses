@@ -40,3 +40,5 @@ while b != "b":
         b = buttonbox(str(name) + " , Someone sends you a text that is hurtful and makes you feel bad about yourself. What should you do? \n\n A. Delete the message and try forget about it\n B. Keep the text and show an adult you trust\n C. Text the person back saying something mean to them", choices='a' 'b' 'c')
         if b == "b":
             total = (total)
+
+msgbox(str(name) + "Well done! You've finished the quiz, you got " + (total) + "/3 correct! If you want to you can retry this quiz, or move onto the next quiz for 14+ Cybersmart Youth Quiz.")
