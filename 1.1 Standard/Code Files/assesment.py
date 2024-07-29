@@ -41,4 +41,4 @@ while b != "b":
         if b == "b":
             total = (total)
 
-msgbox(str(name) + "Well done! You've finished the quiz, you got " + (total) + "/3 correct! If you want to you can retry this quiz, or move onto the next quiz for 14+ Cybersmart Youth Quiz.")
+msgbox(str(name) + " well done! You've finished the quiz, you got " + str(total) + "/3 correct! If you want to you can retry this quiz, or move onto the next quiz for 14+ Cybersmart Youth Quiz.")
