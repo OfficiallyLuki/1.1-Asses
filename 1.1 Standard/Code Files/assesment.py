@@ -1,10 +1,14 @@
-from easygui import * 
+from easygui import * # Imports easy gui so I can use msgbox and other python extensions
+
+# Welcomes user to this quiz in a msgbox
 
 msgbox("Welcome to this Quiz, this is designed for people inbetween the ages of 8 - 13, if you are 14 or over you should try out the Cybersmart Youth Quiz!", title = "Welcome New User!")
 
-name = enterbox("What is your name?", "Welcome to the Cybersmart Start Quiz")
-age = integerbox("How old are you?", "Welcome to the Cybersmart Start Quiz")
-total = 0
+name = enterbox("What is your name?", "Welcome to the Cybersmart Start Quiz") # Asks/Grabs the users name
+age = integerbox("How old are you?", "Welcome to the Cybersmart Start Quiz") # Asks/Grabs the users age
+total = 0 # Sets total to 0, resets when everyone ones the program 
+
+# Checks if the user is inbetween age gaps provided
 
 while age < 8 or age > 13:
     age = integerbox("Please enter an age from 8 to 13", "Welcome to the Cybersmart Start Quiz")
@@ -41,4 +45,4 @@ while b != "b":
         if b == "b":
             total = (total)
 
-msgbox(str(name) + " well done! You've finished the quiz, you got " + str(total) + "/3 correct! If you want to you can retry this quiz, or move onto the next quiz for 14+ Cybersmart Youth Quiz.")
+msgbox(str(name) + " well done! You've finished the quiz, you got " + str(total) + "/3 correct! If you want to you can retry this quiz, or move onto the next quiz for 14+ Cybersmart Youth Quiz, you can!.")
