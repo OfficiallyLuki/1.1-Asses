@@ -21,25 +21,29 @@ msgbox("Hi "  + name + "!" + "\n\n The rules are simple. You will be given 3 que
 
 a = buttonbox(str(name) + " , you want to join an online gaming site. Which of the following information is okay to post online? \n\n A. A nickname\n B. Your name\n C. Your email address", choices='a' 'b' 'c') # Provides the user with the question and three choices
 if a == "a": # If the user gets the answer on the first try they following will run;
-        total = (total+1) # Gives user a point for getting the question right on the first time
+        total =(0+1) # Gives user a point for getting the question right on the first time
         msgbox(str(name) + " , you got your question right the first time") # Provides the user with the information that they got the question right on the first time
-while a != "a": # Repeats the question until they get it wrong
-        msgbox(str(name) + " , you got your question wrong!") # If the user gets it wrong they'll be presented with this
-        a = buttonbox(str(name) + " , you want to join an online gaming site. which of the following information is okay to post online? \n\n A. A nickname\n B. Your name\n C. Your email address", choices='a' 'b' 'c') # Repeated Question
-        if a == "a": # Sets the total to neutral/adds no points since they got the question right but not on the first time
-            total = (total)
+else :  # Repeats the question until they get it right or it repeats twice
+        (total) # Sets total to be the same
+        msgbox(str(name) + ", you got your question wrong!")  # If the user gets it wrong they'll be presented with this
+        a = buttonbox(str(name) + " , Somone sends you a text that is hurtful and makes you feel bad about yourself. What should you do?", choices=["Delete the message and try to forget about it","Keep the text and show an adult you trust","Text the person back saying something mean to them"]) # Repeated Question
+        if a == "a": # If they get it right within two goes they'll be presented with this
+            total = (0) # Sets the total to neutral/adds no points since they got the question right but not on the first time
+            msgbox(str(name) + ", you got your question right in this amount of trys\n\n" + str(2))
 
 # Second Question of the quiz
 
 c = buttonbox(str(name) + " , Someone in your class has posted their first video on YouTube and has asked you to comment on it. You don't think the video is good because the editing is very choppy. What could you comment? \n\n A. Your video is rubbish!\n B. Man, this is awful! Stick to playing sport or something.\n C. Congrats on your first video! Let me know if you'd like any help editing for your next video.", choices='a' 'b' 'c') # Provides the user with the question and three choices
 if c == "c": # If the user gets the answer on the first try they following will run;
         total = (total+1) # Gives user a point for getting the question right on the first time
-        msgbox(str(name) + " , you got your question right the first time") # Provides the user with the information that they got the question right on the first time
-while c != "c":  # Repeats the question until they get it wrong
+        msgbox(str(name) + ", you got your question right the first time") # Provides the user with the information that they got the question right on the first time
+else :  # Repeats the question until they get it right or it repeats twice
+        (total) # Sets total to be the same
         msgbox(str(name) + ", you got your question wrong!")  # If the user gets it wrong they'll be presented with this
         c = buttonbox(str(name) + " , Someone sends you a text that is hurtful and makes you feel bad about yourself. What should you do? \n\n A. Delete the message and try forget about it\n B. Keep the text and show an adult you trust\n C. Text the person back saying something mean to them", choices='a' 'b' 'c') # Repeated Question
         if c == "c":
-            total = (total) # Sets the total to neutral/adds no points since they got the question right but not on the first time
+         total = (total) # Sets the total to neutral/adds no points since they got the question right but not on the first time
+         msgbox(str(name) + ", you got your question right in this amount of trys\n\n" + str(2))
 
 # Third Question of the quiz
 
@@ -47,11 +51,13 @@ b = buttonbox(str(name) + " , Someone sends you a text that is hurtful and makes
 if b == "b": # If the user gets the answer on the first try they following will run;
         total = (total+1)  # Gives user a point for getting the question right on the first time
         msgbox(str(name) + " , you got your question right the first time") # Provides the user with the information that they got the question right on the first time
-while b != "b": # Repeats the question until they get it wrong
-        msgbox(str(name) + " , you got your question wrong!")   # If the user gets it wrong they'll be presented with this
+else :
+        (total) # Sets total to be the same
+        msgbox(str(name) + ", you got your question wrong!")   # If the user gets it wrong they'll be presented with this
         b = buttonbox(str(name) + " , Someone sends you a text that is hurtful and makes you feel bad about yourself. What should you do? \n\n A. Delete the message and try forget about it\n B. Keep the text and show an adult you trust\n C. Text the person back saying something mean to them", choices='a' 'b' 'c') # Repeated Question
         if b == "b":
             total = (total) # Sets the total to neutral/adds no points since they got the question right but not on the first time
+            msgbox(str(name) + ", you got your question right in this amount of trys\n\n" + str(2))
 
 # Ends the quiz with the following msgbox, also presents the user with the total that they got
 
